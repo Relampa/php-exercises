@@ -5,7 +5,7 @@ $baglanti = @mysql_connect('localhost', 'root', 'rootroot');
 $veritabani = @mysql_select_db('1');
  
 if($baglanti && $veritabani) {
-   echo 'Bağlantı kuruldu.';
+ 
 } else {
    echo 'Bağlantı kurulamadı.';
 }
@@ -21,10 +21,16 @@ mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
-<div class="container-fluid">
+<body style="background-color: #efefef;">
+<div class="jumbotron">
+<div class="container">
+<div class="col-md-3">
 <div class="row">
+</div>
+</div>
 <div class="col-md-6">
+<div class="row">
+<h1>Kurs Ekle</h1>
 <form name"form1" method="post" action="kursekle.php">
   <div class="form-group">
     <label for="kursAdi">Kurs Adı</label>
@@ -56,6 +62,12 @@ mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık
 
 </div>
 </div>
+<div class="col-md-3">
+<div class="row">
 </div>
+</div>
+</div>
+</div>
+
 </body>
 </html>

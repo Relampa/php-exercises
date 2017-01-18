@@ -4,11 +4,7 @@
 $baglanti = @mysql_connect('localhost', 'root', 'rootroot');
 $veritabani = @mysql_select_db('1');
  
-if($baglanti && $veritabani) {
-   echo 'Bağlantı kuruldu.';
-} else {
-   echo 'Bağlantı kurulamadı.';
-}
+
  
 
 
@@ -21,11 +17,18 @@ if($baglanti && $veritabani) {
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
-<div class="container-fluid">
+<body style="background-color: #efefef;">
+<div class="jumbotron">
+<div class="container">
+<div class="col-md-1">
 <div class="row">
-<div class="col-md-12">
-<table class="table table-hover">
+</div>
+</div>
+<div class="col-md-10">
+
+<div class="row">
+<center><h1>Aktif Kurslar</h1></center>
+<table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
         <th>Kurs Adı</th>
@@ -63,6 +66,11 @@ $veriler = mysql_query("select * from kurslar");
     </tbody>
   </table>
 
+</div>
+</div>
+<div class="col-md-1">
+<div class="row">
+</div>
 </div>
 </div>
 </div>
