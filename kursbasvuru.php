@@ -30,37 +30,35 @@ mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık
 </div>
 <div class="col-md-6">
 <div class="row">
-<h1>Kurs Ekle</h1>
-<form name"form1" method="post" action="kursekle.php">
-
-  
+<h1>Kurs Önkayıt</h1>
+<form name"form1" method="post" action="onkayit.php">
   <div class="form-group">
-    <label for="kursAdi">Kurs Adı</label>
-    <input type="text" class="form-control" name="kursAdi" placeholder="Kurs Adı">
-  </div>
- 
-  <div class="form-group">
-    <label for="kursSuresi">Kurs Süresi</label>
-    <input type="text" class="form-control" name="kursSuresi" placeholder="Kurs Süresi">
+    <label for="kursadi">Kurs Adı</label>
+    <input type="text" class="form-control" name="kursadi" placeholder="Kurs Adı" value="<?php if($_GET['kursadi']){echo $_GET['kursadi'];}else{echo "Kurs Adı";} ?>">
+	
   </div>
   <div class="form-group">
-    <label for="kursTarihi">Kurs Tarihi</label>
-    <input type="text" class="form-control" name="kursTarihi" placeholder="Kurs Tarihi">
+    <label for="kurskodu">Kurs Kodu</label>
+    <input type="text" class="form-control" name="kurskodu" placeholder="Kurs Kodu" value="<?php if($_GET['kurskodu']){echo $_GET['kurskodu'];}else{echo "Kurs Adı";} ?>">
   </div>
   <div class="form-group">
-    <label for="kursGunleri">Kurs Günleri</label>
-    <input type="text" class="form-control" name="kursGunleri" placeholder="Kurs Günleri">
+    <label for="ad">Adınız</label>
+    <input type="text" class="form-control" name="ad" placeholder="Adınız">
   </div>
   <div class="form-group">
-    <label for="kursYeri">Kurs Yeri</label>
-    <input type="text" class="form-control" name="kursYeri" placeholder="Kurs Yeri">
+    <label for="soyad">Soyadınız</label>
+    <input type="text" class="form-control" name="soyad" placeholder="Soyadınız">
+  </div>
+  <div class="form-group">
+    <label for="tckimlik">TC Kimlik No</label>
+    <input type="text" class="form-control" name="tckimlik" placeholder="TC Kimlik No">
   </div>
 <div class="form-group">
-  <label for="kursAciklama">Kurs Açıklaması:</label>
-  <textarea class="form-control" rows="5" name="kursAciklama"></textarea>
+  <label for="babaadi">Baba Adı:</label>
+  <input type="text" class="form-control" name="babaadi" placeholder="Baba Adı">
 </div>
  
-  <button type="submit" class="btn btn-default">Kurs Ekle</button>
+  <button type="submit" class="btn btn-default">Önkayıt Oluştur</button>
 </form>
 
 </div>
