@@ -35,22 +35,29 @@ mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık
 
   
   <div class="form-group">
+    <label for="Kurs kodu">Kurs Kodu</label>
+    <input type="text" class="form-control" name="kurskodu" placeholder="Kurs Kodu">
+  </div>
+  <div class="form-group">
     <label for="kursAdi">Kurs Adı</label>
     <input type="text" class="form-control" name="kursAdi" placeholder="Kurs Adı">
   </div>
- 
+
   <div class="form-group">
     <label for="kursSuresi">Kurs Süresi</label>
     <input type="text" class="form-control" name="kursSuresi" placeholder="Kurs Süresi">
   </div>
+
   <div class="form-group">
     <label for="kursTarihi">Kurs Tarihi</label>
     <input type="text" class="form-control" name="kursTarihi" placeholder="Kurs Tarihi">
   </div>
+
   <div class="form-group">
     <label for="kursGunleri">Kurs Günleri</label>
     <input type="text" class="form-control" name="kursGunleri" placeholder="Kurs Günleri">
   </div>
+  
   <div class="form-group">
     <label for="kursYeri">Kurs Yeri</label>
     <input type="text" class="form-control" name="kursYeri" placeholder="Kurs Yeri">
@@ -59,6 +66,7 @@ mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık
   <label for="kursAciklama">Kurs Açıklaması:</label>
   <textarea class="form-control" rows="5" name="kursAciklama"></textarea>
 </div>
+
  
   <button type="submit" class="btn btn-default">Kurs Ekle</button>
 </form>
